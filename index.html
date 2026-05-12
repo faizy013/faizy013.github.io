@@ -86,6 +86,7 @@
   .exp-item:hover { background: var(--bg3); }
   .exp-type { font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; color: var(--green); margin-bottom: .5rem; }
   .exp-industry { font-size: .75rem; color: var(--text-faint); line-height: 1.6; }
+  .exp-date { font-size: .65rem; color: var(--green); margin-top: .5rem; opacity: .7; }
   .exp-content-title { font-family: var(--display); font-size: 1.05rem; font-weight: 700; margin-bottom: .6rem; }
   .exp-desc { font-size: .78rem; color: var(--text-dim); line-height: 1.8; margin-bottom: 1rem; }
   .exp-tags { display: flex; flex-wrap: wrap; gap: .4rem; }
@@ -99,6 +100,8 @@
   .project-name { font-family: var(--display); font-size: 1.2rem; font-weight: 700; margin-bottom: .5rem; transition: color .2s; }
   .project-card:hover .project-name { color: var(--green); }
   .project-desc { font-size: .78rem; color: var(--text-dim); line-height: 1.8; flex: 1; margin-bottom: 1.25rem; }
+  .project-desc ul { padding-left: 1.25rem; margin-top: .5rem; }
+  .project-desc li { margin-bottom: .3rem; }
   .project-stack { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.25rem; }
   .project-stack span { font-size: .65rem; padding: .2rem .6rem; border: 1px solid var(--border); color: var(--text-dim); }
   .project-link { font-size: .72rem; color: var(--green); text-decoration: none; letter-spacing: .05em; align-self: flex-start; border-bottom: 1px solid transparent; transition: border-color .2s; }
@@ -198,19 +201,19 @@
       <div class="skill-group">
         <div class="skill-group-title">Backend &amp; Python</div>
         <div class="skill-tags">
-          <span class="skill-tag">Python</span><span class="skill-tag">Django</span><span class="skill-tag">Django REST Framework</span><span class="skill-tag">Celery</span><span class="skill-tag">Redis</span><span class="skill-tag">APScheduler</span><span class="skill-tag">REST APIs</span><span class="skill-tag">WebPush</span>
+          <span class="skill-tag">Python</span><span class="skill-tag">Django</span><span class="skill-tag">Django REST Framework</span><span class="skill-tag">Flask</span><span class="skill-tag">Celery</span><span class="skill-tag">Redis</span><span class="skill-tag">APScheduler</span><span class="skill-tag">REST APIs</span><span class="skill-tag">WebPush VAPID</span>
         </div>
       </div>
       <div class="skill-group">
         <div class="skill-group-title">Database &amp; Infra</div>
         <div class="skill-tags">
-          <span class="skill-tag">MySQL / MariaDB</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">Raw SQL</span><span class="skill-tag">Linux</span><span class="skill-tag">bench CLI</span><span class="skill-tag">Git</span>
+          <span class="skill-tag">MySQL / MariaDB</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQLite3</span><span class="skill-tag">Raw SQL</span><span class="skill-tag">Linux</span><span class="skill-tag">bench CLI</span><span class="skill-tag">Git / GitHub / GitLab</span>
         </div>
       </div>
       <div class="skill-group">
         <div class="skill-group-title">Frontend &amp; Other</div>
         <div class="skill-tags">
-          <span class="skill-tag">JavaScript</span><span class="skill-tag">Chart.js</span><span class="skill-tag">HTML / CSS</span><span class="skill-tag">Java</span>
+          <span class="skill-tag">JavaScript</span><span class="skill-tag">PHP</span><span class="skill-tag">HTML5 / CSS3</span><span class="skill-tag">Bootstrap</span><span class="skill-tag">jQuery</span><span class="skill-tag">Chart.js</span><span class="skill-tag">WordPress (Elementor)</span><span class="skill-tag">Content Writing</span>
         </div>
       </div>
     </div>
@@ -220,9 +223,36 @@
 <section id="experience">
   <div class="section-wrap">
     <div class="section-label">Experience</div>
-    <h2 class="section-title">What I've Built</h2>
+    <h2 class="section-title">Where I've Worked</h2>
     <div class="exp-note">🔒 Production work is under NDA — described at architecture level only</div>
     <div class="exp-list">
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-type">Full-Time</div>
+          <div class="exp-industry">Software Developer<br>Pukat Digital Pvt Ltd</div>
+          <div class="exp-date">Jul 2024 – Present</div>
+        </div>
+        <div>
+          <div class="exp-content-title">Software Developer — Pukat Digital Pvt Ltd</div>
+          <p class="exp-desc">Design and implement robust software solutions leveraging Frappe ERPNext technology. Ensure consistency in software design and implementation across all projects. Specialize in ERP workflows, developing APIs, integrating third-party applications, and enhancing system security — delivering efficient, scalable solutions while ensuring data integrity and seamless operations.</p>
+          <div class="exp-tags"><span class="exp-tag">Frappe ERPNext</span><span class="exp-tag">Python</span><span class="exp-tag">API Development</span><span class="exp-tag">3rd-Party Integrations</span><span class="exp-tag">System Security</span><span class="exp-tag">ERP Workflows</span></div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-type">Full-Time</div>
+          <div class="exp-industry">Junior Web Developer<br>Fayakun Creative Studio</div>
+          <div class="exp-date">Jun 2023 – Jul 2024</div>
+        </div>
+        <div>
+          <div class="exp-content-title">Junior Web Developer — Fayakun Creative Studio</div>
+          <p class="exp-desc">Started as a Web Development Intern for six months gaining hands-on experience with HTML, CSS, JavaScript, and WordPress. Promoted to Junior Web Developer — responsible for building and maintaining websites, customizing WordPress themes and plugins, and optimizing site performance. Handled deployments, troubleshooting, and ensured cross-browser/device functionality.</p>
+          <div class="exp-tags"><span class="exp-tag">HTML/CSS/JS</span><span class="exp-tag">WordPress</span><span class="exp-tag">Elementor Pro</span><span class="exp-tag">jQuery</span><span class="exp-tag">Site Optimization</span><span class="exp-tag">Deployment</span></div>
+        </div>
+      </div>
+
       <div class="exp-item">
         <div class="exp-meta">
           <div class="exp-type">Frappe Custom App</div>
@@ -234,6 +264,7 @@
           <div class="exp-tags"><span class="exp-tag">Custom Doctype</span><span class="exp-tag">Scheduled Tasks</span><span class="exp-tag">Doc Events</span><span class="exp-tag">Script Report</span><span class="exp-tag">REST API</span><span class="exp-tag">Client Script</span></div>
         </div>
       </div>
+
       <div class="exp-item">
         <div class="exp-meta">
           <div class="exp-type">ERPNext Config</div>
@@ -245,6 +276,7 @@
           <div class="exp-tags"><span class="exp-tag">Jinja2 Print Formats</span><span class="exp-tag">Workflows</span><span class="exp-tag">API Integration</span><span class="exp-tag">Custom Reports</span><span class="exp-tag">Permissions</span></div>
         </div>
       </div>
+
       <div class="exp-item">
         <div class="exp-meta">
           <div class="exp-type">Django App</div>
@@ -256,36 +288,70 @@
           <div class="exp-tags"><span class="exp-tag">Django</span><span class="exp-tag">Celery</span><span class="exp-tag">Redis</span><span class="exp-tag">WebPush</span><span class="exp-tag">Chart.js</span><span class="exp-tag">APScheduler</span></div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
 <section id="projects">
   <div class="section-wrap">
-    <div class="section-label">Public Projects</div>
-    <h2 class="section-title">Open Source Work</h2>
+    <div class="section-label">Projects</div>
+    <h2 class="section-title">What I've Built</h2>
     <div class="projects-grid">
+
       <div class="project-card featured">
         <div class="project-num">01 — Featured</div>
+        <div class="project-name">Custom Financing Engine with Ledger-Driven Accounting</div>
+        <p class="project-desc">Full end-to-end member financing system built on ERPNext covering contracts, disbursements, single &amp; bulk receipts, refinancing, early settlements, and real-time ledger tracking.
+          <ul>
+            <li>Designed a custom Financing Ledger as single source of truth for principal, markup, balances &amp; transaction states.</li>
+            <li>Automated repayment schedules, markup calculations, settlement logic, and balance adjustments via Python backend.</li>
+            <li>Handled complex edge cases: partial payments, advance receipts, refinancing carry-forward, early payoff recalculations.</li>
+            <li>Implemented Bank Reconciliation workflows, aligning financing receipts with bank statements for accurate cash balances.</li>
+            <li>Integrated seamlessly with ERPNext accounting workflows for audit-ready financial data and operational consistency.</li>
+          </ul>
+        </p>
+        <div class="project-stack"><span>ERPNext</span><span>Frappe</span><span>Python</span><span>MariaDB</span><span>Custom Ledger</span><span>Bank Reconciliation</span></div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">02</div>
+        <div class="project-name">Ideal Poultry ERP Module</div>
+        <p class="project-desc">Comprehensive ERP module covering Breeder, Broiler, and Layer operations — livestock purchases, egg production, and full-cycle stock management. Automated stock entries, serial/batch tracking, and UOM conversions using dynamic Python logic. Integrated with seven independent companies, supporting custom reports, print formats, and warehouse flows.</p>
+        <div class="project-stack"><span>Frappe ERPNext</span><span>Python</span><span>MariaDB</span><span>Batch Tracking</span><span>Custom Reports</span></div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">03</div>
+        <div class="project-name">Daily Activity Tracker in ERPNext</div>
+        <p class="project-desc">Custom Desk Page inside ERPNext to log, categorize, and filter employee activities. Dynamic role-based grouping (Developer, ERP, QA) with date filters and expandable task summaries. Enhanced UX with real-time data updates and a clean UI built natively inside ERPNext.</p>
+        <div class="project-stack"><span>ERPNext</span><span>Frappe</span><span>JavaScript</span><span>Python</span><span>Role-Based Access</span></div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">04</div>
         <div class="project-name">frappe-inventory-manager</div>
         <p class="project-desc">Production-ready Frappe v15 custom app. Stock alert rules with reorder levels per item/warehouse, automated email notifications, weekly digest, Script Report with SQL, REST API endpoint, client scripts with live stock checker, and full audit log doctypes.</p>
         <div class="project-stack"><span>Frappe v15</span><span>Python</span><span>MariaDB</span><span>Jinja2</span><span>JavaScript</span></div>
         <a href="https://github.com/faizy013/frappe-inventory-manager" target="_blank" class="project-link">View on GitHub</a>
       </div>
+
       <div class="project-card">
-        <div class="project-num">02</div>
-        <div class="project-name">wellness-tracker</div>
-        <p class="project-desc">Django app for health tracking with Celery async tasks, Redis, push notifications (VAPID), automated email reminders, and Chart.js interactive dashboards.</p>
-        <div class="project-stack"><span>Django</span><span>Celery</span><span>Redis</span><span>WebPush</span></div>
+        <div class="project-num">05</div>
+        <div class="project-name">VU Wellness Tracker Web App</div>
+        <p class="project-desc">Full-stack health monitoring dashboard to track hydration, meals, workouts, and sleep. Built with PHP, MySQL, JavaScript, HTML/CSS. Includes user authentication, data logging, visual trend analysis, and a user-friendly UI designed to encourage daily habit building.</p>
+        <div class="project-stack"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML/CSS</span><span>Auth</span></div>
         <a href="https://github.com/faizy013/wellness-tracker" target="_blank" class="project-link">View on GitHub</a>
       </div>
+
       <div class="project-card">
-        <div class="project-num">03 — Coming Soon</div>
+        <div class="project-num">06 — Coming Soon</div>
         <div class="project-name">django-erp-api</div>
-        <p class="project-desc">Production-grade Django REST Framework API with JWT auth, Swagger docs, Celery async tasks, Docker Compose setup, and GitHub Actions CI.</p>
-        <div class="project-stack"><span>Django</span><span>DRF</span><span>PostgreSQL</span><span>Docker</span></div>
+        <p class="project-desc">Production-grade Django REST Framework API with JWT authentication, Swagger docs, Celery async tasks, Docker Compose setup, and GitHub Actions CI pipeline. Designed for scalability and clean API design best practices.</p>
+        <div class="project-stack"><span>Django</span><span>DRF</span><span>PostgreSQL</span><span>Docker</span><span>JWT</span></div>
         <a href="https://github.com/faizy013" target="_blank" class="project-link">GitHub Profile</a>
       </div>
+
     </div>
   </div>
 </section>
@@ -303,6 +369,7 @@
         <a href="https://github.com/faizy013" target="_blank" class="contact-link"><span>github.com/faizy013</span><span class="contact-link-label">GitHub ↗</span></a>
         <a href="https://linkedin.com/in/muhammad-umar-farooq13" target="_blank" class="contact-link"><span>muhammad-umar-farooq13</span><span class="contact-link-label">LinkedIn ↗</span></a>
         <a href="mailto:umarwork13@gmail.com" class="contact-link"><span>umarwork13@gmail.com</span><span class="contact-link-label">Email ↗</span></a>
+        <a href="tel:+923166446460" class="contact-link"><span>+92 316 6446460</span><span class="contact-link-label">Phone ↗</span></a>
         <div class="contact-link" style="cursor:default"><span>Lahore, Pakistan</span><span class="contact-link-label">Location</span></div>
       </div>
     </div>
